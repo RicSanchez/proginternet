@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		
+		<meta charset="uft-8"/>
+		<meta name="descriptions" content="Formularios"/>
+		<meta name="keywords" content="Formularios, input">
+		<title>Formularios con input</title>
+		
+		<style type="text/css"> 
+			body{
+				background-image: url(img/imagen.jpg);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+
+			/*crea el marco*/
+			#formulario{
+				border: solid 20px yellow;
+				border-radius: 70px;
+				margin: 0 auto;
+				width: 50%;
+				padding: 120px;
+			}
+			h1{
+				font-family: cursive;
+				font-weight: bolder;
+				font-size: 35px;
+				margin-bottom: 20px;
+				color: orange;
+			}
+			#uno{
+				color: yellow;
+			}
+			h1 #uno{
+				display: inline;
+			}
+			h2{
+				font-family: cursive;
+				font-weight: bolder;
+				font-size: 23px;
+				color: #BFFF00;
+			}
+			#span2{
+				color: #01DF3A;
+			}
+			#label{
+				display: block;
+				font-weight: bold;
+				width: 40px;
+				font-size: 20px;
+				padding: 5px;
+				align-content: center;
+				color: yellow;
+				font-family: cursive;
+			}
+			#caja{
+				border-radius: 8px;
+				border-color: yellow;
+				height: 50px;
+				margin-top: 10px;
+				background: rgba(24, 145, 73, 0.3);/*buscar color que opacidad no sea mucha, es de cjas de texto*/
+				width: 100%;
+				color: #FF4000;
+				text-align: center;
+				font-family: cursive;
+				font-weight: bold;
+				font-size: 18px;
+				padding: 5px 0px;
+			}
+			#boton{
+				width: 100%;
+				font-family: cursive;
+				margin-top: 25px;
+				outline: none;
+				background: yellow;
+				font-size: 20px;
+				border: none;
+				color: #01DF3A;
+				padding: 15px;
+				border-radius: 20px;
+				cursor: pointer;
+				transition: all .5s ease;
+			}
+			#boton:hover{
+				background: orange;
+				color: yellow;
+			}
+			footer{
+				border: solid 20px yellow;
+				border-radius: 70px;
+				margin: 0 auto;
+				width: 30%;
+				padding: 120px;
+				color: yellow;
+				font-family: cursive;
+				font-weight: lighter;
+				text-align: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<section id="formulario">
+			<form name="registro" method="post" action="registrar.php">
+				<h1><span id="uno">FORMULARIO DE</span><span id="uno">CONTACTO</span></h1>
+
+				<h2>CON<span id="span2">TÁC</span>TA<span id="span2">NOS</span></h2>
+				<hr width="100%" size="18px" color="orange">
+				<br>
+
+				<label id="label">Nombres</label>
+				<input id="caja" type="text" name="txtnombre" value="Ana Gómez" maxlength="5" size="50">
+
+				<label id="label" for="nombre">Nombres</label>
+				<input id="caja" type="text" name="txtnombre" value="Ana Gómez" maxlength="5" size="50" readonly="readonly">
+
+				<label id="label">Nombres</label>
+				<input id="caja" type="text" name="txtnombre" maxlength="5" size="50" placeholder="Juana" autofocus>
+
+				<label id="label">Apellidos</label>
+				<input id="caja" type="text" name="txtnombre" value="Gómez" maxlength="5" size="50" placeholder="Hola" autofocus required="true">
+
+				<label id="label">Dirección</label>
+				<input id="caja" type="text" name="txtnombre" value="Gómez" maxlength="5" size="50" placeholder="Hola" autofocus required="true">	
+
+				<label id="label">Correo Electrónico</label>
+				<input id="caja" type="email" name="txtnombre" size="60" required placeholder="unam@hotmail.com">	
+
+				<label id="label">Mensaje</label>
+				<textarea id="caja" name="cuadrodetextomultiple" cols="12" rows="2" required placeholder="Escriba su mensaje" >	</textarea>	
+
+				<input id="boton" type="submit" value="enviar">
+			</form>
+			
+		</section>
+		<footer>
+	 		<p>
+	 			Nombre: Ricardo Sanchez Lopez
+	 		</p>
+	 		<p>Carrera: Informatica</p>
+			<p>Materia: Programacion en internet 1</p>
+			<p>Numero de practica: 12 y  nombre de la misma: Formualrio input, textarea y sus atributos</p>
+			<p>Grupo:2051</p>
+			<p>Estos datos todas las practicas los deben de contener al final de la pagina</p>
+	 	</footer>
+	</body>
+
+</html>
